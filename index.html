@@ -21,7 +21,7 @@
 
 <body>
 
-    <section class="contenedor-navegacion contenedor">
+    <section class="contenedor-navegacion contenedor" id="home">
         <div>
             <a class="logo" href="index.html">
                 <h1 class="nombre-sitio no-margin text-center">Tomorrow<span>Land</span></h1>
@@ -30,11 +30,10 @@
 
         <div>
             <nav class="nav-principal">
-                <a href="index.html" class="navegacion-enlace">Inicio</a>
-                <a href="nosotros.html" class="navegacion-enlace">Nosotros</a>
-                <a href="blog.html" class="navegacion-enlace">Blog</a>
-                <a href="galeria.html" class="navegacion-enlace">Galería</a>
-                <a href="contacto.html" class="navegacion-enlace">Contacto</a>
+                <a href="#artistas" class="navegacion-enlace">Artistas</a>
+                <a href="#entradas" class="navegacion-enlace">Comprar Entradas</a>
+                <a href="#galeria" class="navegacion-enlace">Galería</a>
+                <a href="#entrevistas" class="navegacion-enlace">Entrevistas</a>
             </nav>
         </div>
     </section>
@@ -51,7 +50,14 @@
 
     <main class="contenido-principal contenedor">
 
-        <h2 class="no-margin">Artistas</h2>
+        <div class="heading">
+            <h2 class="no-margin" id="artistas">Artistas</h2>
+
+            <a href="#home">
+                <img src="img/move_up.svg" alt="Imagen Home">
+            </a>
+        </div>
+
 
         <p class="no-margin parrafo-artista">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex commodi
             aspernatur delectus
@@ -142,8 +148,16 @@
     </main>
 
     <section class="contenedor-entradas contenedor">
+
         <div class="informacion-entrada">
-            <h2 class="no-margin">Comprar Entradas</h2>
+
+            <div class="heading">
+                <h2 class="no-margin" id="entradas">Comprar Entradas</h2>
+
+                <a href="#home">
+                    <img src="img/move_up.svg" alt="Imagen Home">
+                </a>
+            </div>
 
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis et laudantium sed magnam iure quo
                 provident rem, cumque nemo inventore fuga similique laborum doloremque necessitatibus dignissimos
@@ -195,7 +209,7 @@
                 </div>
 
                 <div class="campo">
-                    <input type="submit" value="Enviar" class="boton">
+                    <input type="submit" value="Enviar" class="boton boton-form-entrada">
                 </div>
             </form>
         </div>
@@ -212,43 +226,43 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Abono dos días fecha</td>
+                        <td class="td">Abono dos días fecha</td>
                         <td>$98</td>
                         <td>$98</td>
                         <td>$98</td>
                     </tr>
                     <tr>
-                        <td>Abono dos días fecha</td>
+                        <td class="td">Abono dos días fecha</td>
                         <td>$41</td>
                         <td>$41</td>
                         <td>$41</td>
                     </tr>
                     <tr>
-                        <td>Abono dos días fecha</td>
+                        <td class="td">Abono dos días fecha</td>
                         <td>$27</td>
                         <td>$27</td>
                         <td>$27</td>
                     </tr>
                     <tr>
-                        <td>Abono dos días fecha</td>
+                        <td class="td">Abono dos días fecha</td>
                         <td>$71</td>
                         <td>$71</td>
                         <td>$71</td>
                     </tr>
                     <tr>
-                        <td>Abono dos días fecha</td>
+                        <td class="td">Abono dos días fecha</td>
                         <td>$91</td>
                         <td>$91</td>
                         <td>$91</td>
                     </tr>
                     <tr>
-                        <td>Abono dos días fecha</td>
+                        <td class="td">Abono dos días fecha</td>
                         <td>$87</td>
                         <td>$77</td>
                         <td>$97</td>
                     </tr>
                     <tr>
-                        <td>Abono dos días fecha</td>
+                        <td class="td">Abono dos días fecha</td>
                         <td>$66</td>
                         <td>$81</td>
                         <td>$61</td>
@@ -259,10 +273,17 @@
     </section>
 
     <section class="contenedor-galeria contenedor">
-        <h2 class="text-center">Galería</h2>
+
+        <div class="heading">
+            <h2 class="no-margin" id="galeria">Galería</h2>
+
+            <a href="#home">
+                <img src="img/move_up.svg" alt="Imagen Home">
+            </a>
+        </div>
 
         <ul class="galeria">
-            
+
             <li class="imagen">
                 <a href="img/galeria_01.jpg">
                     <img src="img/galeria_01.jpg" alt="Imagen Galeria">
@@ -317,49 +338,75 @@
                 </a>
             </li>
         </ul>
+    </section> <!-- Fin contenedor-galeria -->
+
+    <section class="contenedor-entrevista contenedor">
+
+        <div class="heading">
+            <h2 class="no-margin" id="entrevistas">Entrevistas</h2>
+
+            <a href="#home">
+                <img src="img/move_up.svg" alt="Imagen Home">
+            </a>
+        </div>
+
+        <div class="grid-entrevista">
+
+            <div class="entrevista">
+                <div class="imagen-entrevista">
+                    <img src="img/logo_contacto.png" alt="Imagen Entrevista">
+                </div>
+
+                <div class="informacion-entrevista">
+                    <h3 class="no-margin">Nicole Wilson</h3>
+
+                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+
+                    <a href="contacto.html" class="boton boton-entevista">Más Info</a>
+                </div> <!-- Fin informacion-entrevista -->
+            </div> <!-- Fin entrevista -->
+
+            <div class="entrevista">
+                <div class="imagen-entrevista">
+                    <img src="img/logo_contacto.png" alt="Imagen Entrevista">
+                </div>
+
+                <div class="informacion-entrevista">
+                    <h3 class="no-margin">Eliana Jimenez</h3>
+
+                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+
+                    <a href="contacto.html" class="boton boton-entevista">Más Info</a>
+                </div> <!-- Fin informacion-entrevista -->
+            </div> <!-- Fin entrevista -->
+        </div> <!-- Fin grid-entrevista -->
     </section>
 
-    <footer class="site-footer">
+    <footer class="contenedor-footer">
+
         <div class="grid-footer contenedor">
 
-            <div>
-                <h3>Categorías</h3>
-
-                <nav class="footer-menu">
-                    <a href="#">Cocina</a>
-                    <a href="#">Ofocina</a>
-                    <a href="#">Jardin</a>
-                    <a href="#">Cochera</a>
-                    <a href="#">Dormitorios</a>
-                </nav>
+            <div class="imagen-footer">
+                <a href="https://x.com/?lang=es" target="_blank">
+                    <img src="img/logo_twitter.png" alt="Imagen Footer">
+                </a>
             </div>
 
-            <div class="footer-menu">
-                <h3>Sobre Nosotros</h3>
-
-                <nav>
-                    <a href="#">Nuestra Historia</a>
-                    <a href="#">Misión, visión y Valores</a>
-                    <a href="#">Carrears</a>
-                    <a href="#">Política de Privacidad</a>
-                    <a href="#">Tñerminos del Servicio</a>
-                </nav>
+            <div class="imagen-footer">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="img/logo_facebook.png" alt="Imagen Footer">
+                </a>
             </div>
 
-            <div class="footer-menu">
-                <h3>Soporte</h3>
-
-                <nav>
-                    <a href="#">Preguntas Frecuentes</a>
-                    <a href="#">Ayuda en Línea</a>
-                    <a href="#">Comfianza y Seguridad</a>
-                </nav>
+            <div class="imagen-footer">
+                <a href="https://www.youtube.com/" target="_blank">
+                    <img src="img/logo_youtube.png" alt="Imagen Footer">
+                </a>
             </div>
 
         </div> <!-- Fin grid-footer -->
 
-        <p class="copyright">Todos los derechos reservados, TiendaMuebles.</p>
-    </footer>
+    </footer> <!-- Fin contenedor-footer -->
 
 </body>
 
