@@ -119,6 +119,7 @@ img {
 .nav-principal a {
     padding: 2rem;
     font-size: 2rem;
+    transition: 0.2s all ease-out;
 }
 
 .nav-principal a:hover {
@@ -189,7 +190,7 @@ img {
     grid-template-columns: repeat(7, 1fr);
     /* column-gap: 2rem;
     row-gap: 2rem; */
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .artista:nth-child(1) img,
