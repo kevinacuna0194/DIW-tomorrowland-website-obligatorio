@@ -116,9 +116,18 @@ img {
     padding: 2.5rem 0;
 }
 
+.contenedor-navegacion h1 {
+    font-weight: 700;
+}
+
+.contenedor-navegacion span {
+    font-weight: 900;
+}
+
 .nav-principal a {
     padding: 2rem;
     font-size: 2rem;
+    font-weight: 400;
     transition: 0.2s all ease-out;
 }
 
@@ -147,8 +156,12 @@ img {
     width: 60rem;
 }
 
+.header-texto h1 {
+    font-weight: 900;
+}
+
 .header-texto p {
-    margin-bottom: 2rem;
+    margin: 0 0 2rem 0;
 }
 
 .header-texto a {
@@ -178,7 +191,7 @@ img {
 }
 
 .contenido-principal p {
-    padding-bottom: 1.6rem;
+    padding-bottom: 1rem;
 }
 
 .parrafo-artista {
@@ -247,7 +260,7 @@ img {
 .texto-artista {
     text-align: center;
     color: var(--blanco);
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .texto-artista h3 {
@@ -256,6 +269,11 @@ img {
 
 .texto-artista p {
     margin: 0 0 .5rem 0;
+}
+
+.texto-artista span {
+    color: var(--negro);
+    font-weight: 900;
 }
 
 /** Comprar Entradas **/
@@ -452,6 +470,7 @@ img {
 
 .entrevista {
     display: flex;
+    align-items: center;
 }
 
 .imagen-entrevista {
@@ -484,8 +503,8 @@ img {
 }
 
 .imagen-footer img {
-    width: 10rem;
-    height: 10rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 .imagen-footer img:hover {
